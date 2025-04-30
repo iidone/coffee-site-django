@@ -1,0 +1,378 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>
+        C O F F E E
+    </title>
+</head>
+<body>
+    <header id="header">
+        <div class="snowblock"></div>
+        <div class="header-content">
+            <img src="{% static 'main/images/coffeeBg.jpg' %}" alt="">
+            <ul class="headerUl">
+                <a href="#" id="scrollToMenu">
+                    <li>МЕНЮ</li>
+                </a>
+                <a href="#" id="scrollToReserv">
+                    <li>БРОНИРОВАНИЕ</li>
+                </a>
+                <a href="#" id="scrollToReview">
+                    <li>НАПИСАТЬ ОТЗЫВ</li>
+                </a>
+                <a href="#" id="scrollToNiceToMeet">
+                    <li>О НАС</li>
+                </a>
+            </ul>
+            <ul class="headerUlRight">
+                <li>+7 (999) 999-99-99
+                    <br>
+                    Придуманная ул. 8, стр. 1
+                </li>
+                <li></li>
+            </ul>
+            <h1 class="coffeeHeader">
+                Кофейня C O F F E E
+            </h1>
+            <p class="coffeeDescHeader">
+                Локальное кафе где-то в, допустим, в Москве для встреч с близкими людьми.
+            </p>
+            <a href="#" id="scrollToNiceToMeet2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill btnToDown" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        <hr>
+        <section id="niceToMeet">
+            <div>
+                <h1>
+                    Мы всегда рады гостям!
+                </h1>
+                <div class="container">
+                    <ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock leftIcon" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                          </svg>
+                        <li>
+                            <h2>Дни открытия:</h2>
+                            <p>Пн-Пт: 8:00-22:00</p>
+                            <p>Сб-Вс: 10:00-22:00</p>
+                        </li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt leftIcon" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                          </svg>
+                        <li>
+                            <h2>Наш адрес:</h2>
+                            <p>Придуманная ул. 8, стр. 1</p>
+                        </li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup leftIcon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899zM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+                          </svg>
+                        <li>
+                            <h2>Наше молоко:</h2>
+                            <p>Цельное, лактозное и безлактозное</p>
+                        </li>
+                    </ul>
+                    <div class="about">
+                        <p>У нас очень обширное меню, в котором есть не только различные виды кофе, но и закуски!</p>
+                        <br>
+                        <p>Для любителей сладкого мы предлагаем наивкуснейшие круассаны, пончики, печенье и много чего другого.</p>
+                        <br>
+                        <p>В нашей кофейне очень уютная и ламповая атмосфера, которая представляет собой приятный для глаза свет, 
+                            множество атрибутов домашнего уюта, большое количество зелени и цветов, а также приятного сервиза.
+                        </p>
+                        <br>
+                        <p>Наша кофейня идеально подходит для деловых, дружеских или романтических встреч для каждого!
+                            Или, вы можете поработать за ноутбуком с горячей чашечкой кофе.
+                        </p>
+                    </div>
+                </div>
+                <div class="mapAndQRContainer">
+                    <div class="mapWidget">
+                        <h1>Мы находимся здесь:</h1>
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                            <a href="https://yandex.ru/maps/213/moscow/house/novocherkasskiy_bulvar_2s2/Z04YcQZjSEEDQFtvfXp1dHpnbQ==/?ll=37.713698%2C55.645494&utm_medium=mapframe&utm_source=maps&z=19.58" style="color:#eee;font-size:12px;position:absolute;top:14px;">Новочеркасский бульвар, 2с2 — Яндекс Карты</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.713698%2C55.645494&mode=whatshere&whatshere%5Bpoint%5D=37.713209%2C55.645575&whatshere%5Bzoom%5D=17&z=19.58" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                    <div class="telegramBotQR">
+                        <h1>Забронируй столик у нашего Telegram бота:</h1>
+                        <img src="{% static 'main/images/qr-code.jpg' %}" alt="Telegram Bot QR Code" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="menu-container">
+            <hr>
+            <img src="{% static 'main/images/coffeebg2.jpg' %}" class="menuImg" alt="" id="menu">
+            <h1 class="coffeeMenu">
+                Меню
+            </h1>
+            <ul class="menuUl">
+                <a href="#" id="toCoffee">
+                    <li>
+                        Кофе
+                    </li>
+                </a>
+                <a href="#" id="toTea">
+                    <li>
+                        Чаи
+                    </li>
+                </a>
+                <a href="#" id="toMilkshakes">
+                    <li>
+                        Милкшейки
+                    </li>
+                </a>
+                <a href="#" id="toKruassans">
+                    <li>
+                        Круассаны
+                    </li>
+                </a>
+                <a href="#" id="toSandwiches">
+                    <li>
+                        Сэндвичи
+                    </li>
+                </a>
+                <a href="#" id="toSweet">
+                    <li>
+                        Сладкое
+                    </li>
+                </a>
+            </ul>
+            <a href="#" id="scrollToCoffeeInMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill btnToDown" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <h1 class="menuH1" id="coffeeInMenu">Кофе:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Кофе' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        <hr>
+        <h1 class="menuH1" id="teaInMenu">Чаи:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Чай' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        <hr>
+        <h1 class="menuH1" id="milkshakesInMenu">Милкшейки:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Милкшейк' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>  
+        <br>
+        <br>
+        <hr>
+        <h1 class="menuH1" id="kruassansInMenu">Круассаны:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Круассан' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        <hr>
+        <h1 class="menuH1" id="sandwichesInMenu">Сэндвичи:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Сэндвич' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        <hr>
+        <h1 class="menuH1" id="sweetInMenu">Сладкое:</h1>
+            <div class="container2">
+                {% for product in products %}
+                    {% if product.type == 'Сладкое' %}
+                        <div class="menuItems">
+                            <img src="{{ product.image.url }}" class="menuImage" alt="">
+                            <h3>{{ product.item }}</h3>
+                            <h3>{{ product.price }}</h3>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        <hr>
+        <div class="reserv-container" id="reserv">
+            <img src="{% static 'main/images/bronbg.jpg' %}" class="menuImg" alt="">
+<form action="" method="post" class="reserv" id="reservationForm" onsubmit="return validatePhone() && validateReservation()">
+    {% csrf_token %}
+                <h1>
+                    Бронирование
+                </h1>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]+" title="Имя должно содержать только буквы." required> 
+                <div id="nameError" class="error" aria-live="polite"> 
+                    <h3>Пожалуйста, введите имя.</h3>
+                </div>
+                
+                <input class="input-field" 
+                       id="phone" 
+                       name="phone" 
+                       type="tel" 
+                       placeholder="+7(___)___-__-__" 
+                       required>
+                <div id="Error" class="error" aria-live="polite"> 
+                    <h3></h3>
+                </div>
+                
+                <input type="date" id="date" name="date" placeholder="Дата" required>
+                <div id="dateError" class="error" aria-live="polite"> 
+                    <h3>Пожалуйста, введите корректную дату.</h3>
+                </div>
+                
+                <input type="time" id="time" name="time" placeholder="Время" required>
+                <div id="timeError" class="error" aria-live="polite"> 
+                    <h3>Время для будних дней должно быть между 8:00 и 22:00, а время для выходных должно быть между 10:00 и 22:00.</h3>
+                </div>
+                
+                <input type="number" id="numPersons" name="numPersons" placeholder="Количество персон" required maxlength="1">
+                <div id="personError" class="error" aria-live="polite"> 
+                    <h3>Минимальное количество персон - 1, а максимальное - 5.</h3>
+                </div>
+                
+                <input type="text" name="allergy" id="allergy" placeholder="Есть ли у вас аллергия?">
+                <div id="Error" class="error" aria-live="polite"> 
+                    <h3></h3>
+                </div>
+
+                <input type="text" name="comment" placeholder="Комментарий">
+                <div id="Error" class="error" aria-live="polite"> 
+                    <h3></h3>
+                </div>
+                
+                <button type="submit" class="submitReservBtn">Забронировать</button>
+                <div id="successMessage" class="success" aria-live="polite">
+                    Столик забронирован.
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="review-container" id="writeReview">
+            <h1>
+                Оставьте отзыв о нашей кофейне!
+            </h1>
+            <div class="writeReview">
+                <form action="" method="POST" id="reviewForm" onsubmit="return validateRating(event)">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Введите имя" required>
+                    <textarea name="review" id="" cols="30" rows="10" placeholder="Напишите отзыв" required></textarea>
+                    <div class="rating">
+                        <h3>Поставьте оценку заведению:</h3>
+                        <label>
+                            <input type="radio" name="rating" value="1">
+                            <span class="custom-radio"></span> 1
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="2">
+                            <span class="custom-radio"></span> 2
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="3">
+                            <span class="custom-radio"></span> 3
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="4">
+                            <span class="custom-radio"></span> 4
+                        </label>
+                        <label>
+                            <input type="radio" name="rating" value="5">
+                            <span class="custom-radio"></span> 5
+                        </label>
+                    </div>
+                    <div id="ratingError" class="error center" aria-live="polite"> 
+                        <h3>Пожалуйста, поставьте оценку.</h3>
+                    </div>
+                    <div class="review-button-container"> 
+                        <button type="submit" class="reviewSendBtn">Отправить</button>
+                    </div>
+                    <div id="successMessage2" class="success" aria-live="polite">
+                        Спасибо за отзыв!
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <h2>
+                Вот, что о нас пишут наши клиенты:
+            </h2>
+            <div class="reviewDb" id="reviewList">
+                {% for review in reviews|slice:":3" %}
+                    <div class="reviewFormDb">
+                        <div class="user-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                            <h3>
+                                Пользователь {{ review.name }}
+                            </h3>
+                        </div>
+                        <p style="font-weight: bold;">
+                            Оценка: {{ review.rate }}
+                        </p>
+                        <p>
+                            {{ review.review }}
+                        </p>
+                        <p class="dateReview">
+                            {{ review.date|date:"j M Y в H:i" }}
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+            <button id="loadMore" style="display: {% if reviews_count > 3 %} block {% else %} none {% endif %};">
+                Показать ещё
+            </button>
+        </div>
+        <hr>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
