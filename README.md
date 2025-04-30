@@ -1,0 +1,1 @@
+This is a template website for a Moscow coffee shop, written in Django. A PostgreSQL database was also used to implement table reservations, leaving reviews, and displaying the coffee shop menu. A QR code for a Telegram bot was also added, which can be used to reserve a table from the app. The repository for this bot is also in my profile.
